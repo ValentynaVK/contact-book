@@ -1,0 +1,23 @@
+.contact-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  border-radius: 8px;
+  background-color: rgb(226, 238, 193);
+  padding: 0 0 25px;
+
+  overflow: hidden;
+}
+
+.card-picture {
+  width: 100%;
+  height: 140px;
+}
+
+.card-body {
+  padding: 6px;
+}

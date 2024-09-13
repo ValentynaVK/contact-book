@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./sass/main.scss" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div>
+          <label for="name">Name</label>
+          <input placeholder="John" type="text" name="name" id="name" />
+        </div>
+        <div>
+          <label for="age">Age</label>
+          <input placeholder="28" type="number" name="age" id="age" />
+        </div>
+        <div>
+          <label for="number">Phone number</label>
+          <input
+            placeholder="+38 098 746 16 42"
+            type="number"
+            name="number"
+            id="number"
+          />
+        </div>
+        <div>
+          <label for="image">Link image</label>
+          <input
+            placeholder="https://image.jpeg"
+            type="text"
+            name="image"
+            id="image"
+          />
+        </div>
+        <button type="submit">Add contact</button>
+      </form>
+
+      <ul class="contact-list"></ul>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
