@@ -1,0 +1,28 @@
+%buttonStyle {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 21px;
+  height: 21px;
+  border: 1px #c2da8f solid;
+  border-radius: 50%;
+  opacity: 0.75;
+  transition: border-color 0.25s linear, box-shadow 0.25s linear;
+}
+%addContactButton {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px #c2da8f solid;
+  background-color: rgb(226, 238, 193);
+}

@@ -19,5 +19,13 @@
 }
 
 .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   padding: 6px;
+}
+
+.delete-button {
+  @extend %addContactButton;
+  margin-bottom: 0;
 }

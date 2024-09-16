@@ -9,7 +9,18 @@
   </head>
   <body>
     <div class="container">
-      <form>
+      <button class="open-btn" type="submit">Add contact</button>
+
+      <ul class="contact-list"></ul>
+    </div>
+    <footer></footer>
+    <div class="form-wrapper modal hidden">
+      <button class="close-btn" type="button">
+        <svg width="8" height="8"></svg>
+        <use href="./img/icons/symbol-defs.svg#cross"></use>
+      </svg>
+      </button>
+      <form class="add-contact-form ">
         <div>
           <label for="name">Name</label>
           <input placeholder="John" type="text" name="name" id="name" />
@@ -36,10 +47,9 @@
             id="image"
           />
         </div>
-        <button type="submit">Add contact</button>
       </form>
-
-      <ul class="contact-list"></ul>
+      <button class="add-contact-btn" type="button">Add Contact</button>
+      
     </div>
     <script type="module" src="/main.js"></script>
   </body>

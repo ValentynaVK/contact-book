@@ -22,9 +22,26 @@ function addMarkupToTheContactList(users) {
                 <h2>${name}, ${age}</h2>
                 <span>${number}</span>
             </div>
+            <div class="button-container">
+             <button class="delete-button" type="button">
+                     Delete 
+                </button>
+            </div>
+               
         </li>`
     )
     .join("");
 
   contactList.innerHTML = usersMarkup;
 }
+
+const btnOpen = document.querySelector(".open-btn");
+const backdrop = document.querySelector(".modal");
+const btnClose = document.querySelector(".close-btn");
+
+const handleShowModal = () => {
+  document.body.classList.toggle("is-modal-open");
+};
+
+btnOpen.addEventListener("click", handleShowModal);
+btnClose.addEventListener("click", handleShowModal);

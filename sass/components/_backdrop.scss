@@ -1,0 +1,48 @@
+.form-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+
+  background-color: rgb(226, 238, 193);
+
+  body.is-modal-open & {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.open-btn {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px #c2da8f solid;
+  background-color: rgb(226, 238, 193);
+}
+.add-contact-form {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.close-btn {
+  @extend %buttonStyle;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.add-contact-btn {
+  @extend %addContactButton;
+}
