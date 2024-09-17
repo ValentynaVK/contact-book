@@ -8,7 +8,6 @@
 .card {
   border-radius: 8px;
   background-color: rgb(226, 238, 193);
-  padding: 0 0 25px;
 
   overflow: hidden;
 }
@@ -28,4 +27,5 @@
 .delete-button {
   @extend %addContactButton;
   margin-bottom: 0;
+  background-color: rgb(252, 72, 72);
 }

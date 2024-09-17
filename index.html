@@ -16,11 +16,11 @@
     <footer></footer>
     <div class="form-wrapper modal hidden">
       <button class="close-btn" type="button">
-        <svg width="8" height="8"></svg>
-        <use href="./img/icons/symbol-defs.svg#cross"></use>
-      </svg>
+        <svg width="8" height="8">
+          <use href="./img/icons/sprite.svg#cross" />
+        </svg>
       </button>
-      <form class="add-contact-form ">
+      <form class="add-contact-form">
         <div>
           <label for="name">Name</label>
           <input placeholder="John" type="text" name="name" id="name" />
@@ -47,10 +47,10 @@
             id="image"
           />
         </div>
+        <button class="add-contact-btn" type="submit">Add Contact</button>
       </form>
-      <button class="add-contact-btn" type="button">Add Contact</button>
-      
     </div>
     <script type="module" src="./main.js"></script>
+    <script type="module" src="./services/api.js"></script>
   </body>
 </html>
